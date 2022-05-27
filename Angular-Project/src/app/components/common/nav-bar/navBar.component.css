@@ -1,0 +1,14 @@
+.nav-bar {
+    background-color: #003856;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    padding: 10px 5px 0px 5px;
+    color: white;
+    padding-left: 48px;
+}
+.page-name {
+  font-size: 10px;
+}

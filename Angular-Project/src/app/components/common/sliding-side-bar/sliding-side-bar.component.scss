@@ -1,0 +1,52 @@
+.sliding-side-bar {
+    background-color: #003856;
+    position: fixed;
+    top: 40px;
+    left: 0px;
+    height: calc(100% - 50px);
+    width: 300px;
+    padding: 5px;
+    color: white;
+    transition: left 0.3s ease;
+}
+.sliding-side-bar.hide {
+    left: -310px;
+    transition: left 0.3s ease;
+}
+.sliding-side-bar-floting-button {
+position: absolute;
+    color: #d7e1e6;
+    text-shadow: 1px 1px 1px rgba(36, 95, 128, 0.54);
+    font-size: 30px;
+    top: 2px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+.sliding-side-bar-floting-button.turn {
+  -webkit-transform: rotate(180deg);
+	-moz-transform:    rotate(180deg);
+	-o-transform:      rotate(180deg);
+	-ms-transform:     rotate(180deg);
+}
+.sideBar-ul {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+        background-image: none;
+        background-repeat: none;
+        background-position: 0;
+        width: calc(100% - 10px);
+        padding: 10px 0px 10px 20px;
+        cursor: pointer;
+        margin-left: -5px;
+        border-bottom: 1px solid #3f6173;
+      }
+      li:hover {
+        background-color: #3f6173;
+      }
+  }

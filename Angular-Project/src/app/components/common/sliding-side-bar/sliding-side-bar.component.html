@@ -1,0 +1,14 @@
+
+<div class="sliding-side-bar-floting-button" [ngClass] = "{'turn': !show_left}">
+  <i class="fa fa-arrow-circle-left" aria-hidden="true" (click) = "show_hide_left()">
+      <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20" fill = "white"><rect y="11" width="24" height="2" rx="1"/><rect y="4" width="24" height="2" rx="1"/><rect y="18" width="24" height="2" rx="1"/></svg>
+  </i>
+</div>
+<div class="sliding-side-bar" [ngClass] = "{'hide': !show_left}">
+  <ul class = "sideBar-ul">
+    <li (click) = "navigate('basics')">Basics</li>
+    <li (click) = "navigate('services')">Services</li>
+    <li (click) = "navigate('pipes')">Pipes</li>
+  </ul>
+</div>
+  
