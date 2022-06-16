@@ -1,3 +1,54 @@
-<H3>Routing</H3>
-File Name : app-routing.module.ts <br>
-this.router.navigate(['routeName']);
+<div class = "basics-Page">
+    <H3>Routing</H3>
+    File Name : app-routing.module.ts <br>
+    this.router.navigate(['routeName']);
+
+    <h3>Getters Setters</h3>
+    <table>
+        <tr>
+            <td><input type="text" [(ngModel)] = "value"></td>
+            <td><button (click) = "setValue()">Setter</button></td>
+        </tr>
+        <tr>
+            <td>{{valueGet}}</td>
+            <td>Getter</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <h3>Directives</h3>
+    <ul>
+        <li>Directives are meant to change DOM elements, like value or style.</li>
+        <li>Inbuilt directives example : ngFor, ngIf, ngStyle, ngClass, ngModel</li>
+        <li>Custom Directives have only ts files</li>
+    </ul>
+    <u>Custom Directive</u>
+    <table>
+        <tr>
+            <td></td>
+            <th>Original</th>
+            <th>Directive</th>
+            <th>Location in Code</th>
+        </tr>
+        <tr>
+            <th>Change Style</th>
+            <td><span>Sample Text</span></td>
+            <td><span appCustomStyle>Sample Text</span></td>
+            <td>custom-style.directive.ts</td>
+        </tr>
+        <tr>
+            <th>Change Value</th>
+            <td><span>100</span></td>
+            <td><span appCustomValue>100</span></td>
+            <td>custom-value.directive.ts</td>
+        </tr>
+    </table>
+    <h3>Interface</h3>
+    <code>
+            export interface INTERFACE_NAME {{'{'}} <br>
+                var : type, <br>
+                functionName(): return type <br>
+            {{'}'}}
+    </code>
+    
+</div>

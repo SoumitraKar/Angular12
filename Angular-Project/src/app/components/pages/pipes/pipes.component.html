@@ -1,2 +1,36 @@
-<p>pipes works!</p>
- s
+<h3>Pipes</h3>
+Date Pipe : {{today | date:'dd/mm/yyyy'}}
+<br><br>
+Number: <br>
+numVal | number:'4.1-5' <br>
+<table class = "pipe_table">
+    <tr>
+        <th>Original Val</th>
+        <th>THrough Pipe</th>
+    </tr>
+    <tr>
+        <td>{{n1}}</td>
+        <td>{{n1 | number:'4.1-5'}}</td>
+    </tr>
+    <tr>
+        <td>{{n2}}</td>
+        <td>{{n2 | number:'4.1-5'}}</td>
+    </tr>
+    <tr>
+        <td>{{n3}}</td>
+        <td>{{n3 | number:'4.1-5'}}</td>
+    </tr>
+    <tr>
+        <td><input type="text" [(ngModel)] = "n4"></td>
+        <td>{{n4 | number:'4.1-5'}}</td>
+    </tr>
+</table> <br>
+<br><br>
+
+<h4>Custom Pipes</h4>
+<u>ts File </u><br>
+transform(value1: number, value2: number): string  <br>
+<u>HTML File </u><br>
+value1 | pipeName : value2<br><br>
+{{5 | customPipe : 4}} 
+<br> <br>
