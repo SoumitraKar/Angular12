@@ -1,3 +1,4 @@
+<span appCustomStyle>NOTE: Pipes change the value and directives modify the DOM element</span> <br>
 <h3>Pipes</h3>
 Date Pipe : {{today | date:'dd/mm/yyyy'}}
 <br><br>
@@ -24,13 +25,44 @@ numVal | number:'4.1-5' <br>
         <td><input type="text" [(ngModel)] = "n4"></td>
         <td>{{n4 | number:'4.1-5'}}</td>
     </tr>
-</table> <br>
-<br><br>
-
+</table>
 <h4>Custom Pipes</h4>
 <u>ts File </u><br>
 transform(value1: number, value2: number): string  <br>
 <u>HTML File </u><br>
 value1 | pipeName : value2<br><br>
 {{5 | customPipe : 4}} 
+<br>
+<img src="../../../../assets/Pipe.png" width="40%" alt="">
 <br> <br>
+    <h3>Directives</h3>
+    <ul>
+        <li>Directives are meant to change DOM elements, like value or style.</li>
+        <li>Inbuilt directives example : ngFor, ngIf, ngStyle, ngClass, ngModel</li>
+        <li>Custom Directives have only ts files</li>
+    </ul>
+    <h4>Custom Directive</h4>
+    <table class="pipe_table">
+        <tr>
+            <td></td>
+            <th>Original</th>
+            <th>Directive</th>
+            <th>Code (HTML)</th>
+            <th>Location in Code</th>
+        </tr>
+        <tr>
+            <th>Change Style</th>
+            <td><span>Sample Text</span></td>
+            <td><span appCustomStyle>Sample Text</span></td>
+            <td>{{'<'}}span appCustomStyle>Sample Text{{'< /'}}span ></td>
+            <td>custom-style.directive.ts</td>
+        </tr>
+        <tr>
+            <th>Change Value</th>
+            <td><span>100</span></td>
+            <td><span appCustomValue>100</span></td>
+            <td> {{'<'}}span appCustomValue>100 {{'< /'}}span ></td>
+            <td>custom-value.directive.ts</td>
+        </tr>
+    </table>
+    <img src="../../../../assets/CustomDirective.png" width="40%" alt="">

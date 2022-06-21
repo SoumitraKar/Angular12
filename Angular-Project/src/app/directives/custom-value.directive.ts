@@ -1,18 +1,11 @@
 import { Directive, ElementRef, OnInit } from '@angular/core';
-
 @Directive({
   selector: '[appCustomValue]'
 })
 export class CustomValueDirective  implements OnInit {
-
-  constructor(private el:ElementRef) { 
-    
-    // el.nativeElement.innerText = val;
-  }
+  constructor(private el:ElementRef) {}
   ngOnInit (): void {
     let val = this.el.nativeElement.innerText;
-    console.log(val);
-    val = "₹" + val + ".00/-"
-    this.el.nativeElement.innerText = val;
+    this.el.nativeElement.innerText = "₹" + val + ".00/-";
   }
 }

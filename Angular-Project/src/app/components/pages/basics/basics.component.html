@@ -1,7 +1,4 @@
 <div class = "basics-Page">
-    <H3>Routing</H3>
-    File Name : app-routing.module.ts <br>
-    this.router.navigate(['routeName']);
 
     <h3>Getters Setters</h3>
     <table>
@@ -15,34 +12,7 @@
         </tr>
     </table>
 
-    <br><br>
-    <h3>Directives</h3>
-    <ul>
-        <li>Directives are meant to change DOM elements, like value or style.</li>
-        <li>Inbuilt directives example : ngFor, ngIf, ngStyle, ngClass, ngModel</li>
-        <li>Custom Directives have only ts files</li>
-    </ul>
-    <u>Custom Directive</u>
-    <table>
-        <tr>
-            <td></td>
-            <th>Original</th>
-            <th>Directive</th>
-            <th>Location in Code</th>
-        </tr>
-        <tr>
-            <th>Change Style</th>
-            <td><span>Sample Text</span></td>
-            <td><span appCustomStyle>Sample Text</span></td>
-            <td>custom-style.directive.ts</td>
-        </tr>
-        <tr>
-            <th>Change Value</th>
-            <td><span>100</span></td>
-            <td><span appCustomValue>100</span></td>
-            <td>custom-value.directive.ts</td>
-        </tr>
-    </table>
+    
     <h3>Interface</h3>
     <code>
             export interface INTERFACE_NAME {{'{'}} <br>
@@ -50,5 +20,25 @@
                 functionName(): return type <br>
             {{'}'}}
     </code>
-    
+    <hr>
+    Examples of <b>non-semantic</b>  elements: {{'<'}}div> and {{'<'}}span> - Tells nothing about its content. <br>
+    Examples of <b> semantic</b>  elements: {{'<'}}form>, {{'<'}}table>, and {{'<'}}article> - Clearly defines its content.
+    <hr>
+    <h4>Let vs Var</h4>
+    <ul>
+        <li>var is <b> Function scope</b>, let is <b>block scoped</b></li>
+        <li>var allows <b> redeclaration </b> <br>
+            var a = 5 <br>
+            var a = 6 // Allowed <br>
+            let a = 5 <br>
+            let a = 6 // Compilation Error
+        </li>
+        <li>
+            <b> Hoisting occours in var </b><br>
+            console.log(var1); //Returns Undefined <br>
+            var var1 = 2; <br>
+            console.log(var2); //Compilation Error <br>
+            let var2 = 2; <br>
+        </li>
+    </ul>
 </div>

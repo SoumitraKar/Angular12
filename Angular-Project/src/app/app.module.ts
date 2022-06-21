@@ -18,6 +18,8 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CustomStyleDirective } from './directives/custom-style.directive';
 import { CustomValueDirective } from './directives/custom-value.directive';
 import { ObjectComponentComponent } from './components/object-component/object-component.component';
+import { RoutingComponent } from './components/pages/routing/routing.component';
+import { JavaScriptComponent } from './components/pages/java-script/java-script.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ObjectComponentComponent } from './components/object-component/object-c
     BlockedPageComponent,
     CustomStyleDirective,
     CustomValueDirective,
-    ObjectComponentComponent
+    ObjectComponentComponent,
+    RoutingComponent,
+    JavaScriptComponent
   ],
   imports: [
     BrowserModule,
